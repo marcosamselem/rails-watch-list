@@ -1,0 +1,7 @@
+<li class="list-group-item">
+  <%= @bookmark.comment %>
+  <%= link_to "Delete",
+    list_bookmark_path(@list, @bookmark),
+    data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+  %>
+</li>
